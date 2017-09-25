@@ -11,8 +11,8 @@ minkowskiDifference a b = Convex $ (-) <$> support a <*> (support b . (+ pi))
 
 -- | Compute angle of a vector
 unAngle :: V2 Double -> Double
-unAngle (V2 ax ay) =
-  let alpha = asin $ ay / (ax * ax + ay * ay)
+unAngle a@(V2 ax ay) =
+  let alpha = asin $ ay / norm a
   in if ax < 0
        then pi - alpha
        else alpha

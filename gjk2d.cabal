@@ -1,5 +1,5 @@
 name:                gjk2d
-version:             0.1.0.0
+version:             0.1.0.1
 -- synopsis:
 description:         Yet another 2D GJK collision dection algorithm with Linear
 homepage:            https://github.com/suzumiyasmith/gjk2d#readme
