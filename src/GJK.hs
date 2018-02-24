@@ -1,4 +1,9 @@
-module GJK where
+{-# LANGUAGE Trustworthy #-}
+module GJK
+  ( Convex (..)
+  , convexIntersect
+  )
+where
 
 import Linear
 
